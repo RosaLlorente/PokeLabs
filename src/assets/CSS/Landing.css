@@ -1,0 +1,32 @@
+@import url('./style.css');
+/*SECCIÓN Landing*/
+#Landing{
+    height: 100vh;
+}
+#Landing .Contenido{
+    width: 100%;
+}
+#Landing .video-bg {
+    object-fit: cover;
+    z-index: -1; 
+}
+#Landing  .Contenido {
+    z-index: 1; 
+}
+#Landing  aside p{
+    margin-top: 0.5em;
+    font-size: 0.7em;
+}
+#Landing  button{
+    width: 20%;
+    background-color: rgba(10, 123, 10, 0.407);
+    backdrop-filter: blur(10px);
+    color: rgb(255, 247, 0);
+    padding: 0.7em;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 10%;
+    font-family: var(--font-button);
+}

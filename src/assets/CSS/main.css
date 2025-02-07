@@ -1,0 +1,156 @@
+@import url('./style.css');
+body{
+    font-family: var(--font-text);
+}
+header{
+    width: 100%;
+    background-color: black;
+}
+.MENU{
+    background-color: #c30404;
+}
+.menu-top {
+    width: 100%;
+    height: 120px;
+    background-color: #ff0000;
+    z-index: 1;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 15% 70%, 10% 100%, 0 100%);
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #0099ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -10px -10px 5px 0px #0c84d4;
+}
+.circle2 {
+    width: 30px;
+    height: 30px;
+    background-color: #abd4ef9b;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -3px -3px 4px 0px #0099ff;
+}
+.circle3 {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff9b;
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    box-shadow: inset -2px -3px 4px 0px #abd4ef9b;
+}
+.indicators {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    display: flex;
+    gap: 10px;
+}
+.led {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 2px 1px #2d2c2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.led-red { 
+    background-color: #ff4444;
+    animation-name: luzRoja;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+.led-yellow { 
+    background-color: #ffff00;
+    animation-name: luzAmarilla;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
+.led-green { 
+    background-color: #00ff00;
+    animation-name: luzVerde;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ol {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style-type: none;
+    padding: 1em;
+    margin-left: 13em;
+    font-family: var(--font-text);
+    font-size: 1.3em;
+}
+.MENU li{
+    transition: all 0.3s ease-in-out;
+    padding: 0.2em;
+}
+.Link{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.Musica{
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
+.MENU li:hover{
+    text-decoration: none;
+    background-color: #f2ff00;
+    border-radius: 5px;
+    padding: 0.1em;
+    color: red;
+    transform: translateY(-5px);
+    box-shadow: black 0px 0px 10px;
+}
+.Link:hover{
+    color: red;
+    width: 100%;
+}
+.active{
+    color: #ffffff;
+    cursor: pointer;
+}
+.disabled{
+    color: rgb(29, 0, 0);
+    cursor: pointer;
+}
+@keyframes luzRoja {
+    0% {background-color: red;}
+    30% {background-color: rgb(58, 14, 2);}
+    100% {background-color: red;}
+}
+@keyframes luzAmarilla {
+    0% {background-color: #ffff00;}
+    60% {background-color: #464605;}
+    100% {background-color: #ffff00;}
+}
+@keyframes luzVerde {
+    0% {background-color: #00ff00;}
+    90% {background-color: #022f02;}
+    100% {background-color: #00ff00;}
+}

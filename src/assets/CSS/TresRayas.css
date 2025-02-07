@@ -1,0 +1,58 @@
+@import url('./style.css');
+#TresRayas{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #c30404;
+    margin: 0;
+    font-family: var(--font-text);
+}
+#TresRayas .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 95%;
+    height: auto;
+    background-color: rgb(141, 164, 235);
+    border: 2px inset #390000;
+    font-family: var(--font-text);
+    margin-bottom: 5em;
+}
+
+#TresRayas h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: var(--font--title);
+}
+
+#TresRayas .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+}
+
+#TresRayas .grid div {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+}
+
+#TresRayas .grid div:hover {
+    background-color: #e9ecef;
+}
+
+#TresRayas button {
+    margin-top: 20px;
+}

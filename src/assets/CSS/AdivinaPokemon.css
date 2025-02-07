@@ -1,0 +1,63 @@
+@import url('./style.css');
+#AdivinaPokemon{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #c30404;
+    margin: 0;
+}
+#AdivinaPokemon .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 95%;
+    height: 70%;
+    background-color: rgb(141, 164, 235);
+    border: 2px inset #390000;
+    font-family: var(--font-text);
+    margin-bottom: 5em;
+}
+
+#AdivinaPokemon .pokemon-img {
+    width: 200px;
+    filter: brightness(0);
+    transition: filter 0.5s ease-in-out;
+}
+
+#AdivinaPokemon .pokemon-img.reveal {
+    filter: none;
+}
+
+#AdivinaPokemon .input-text {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: #cacbcc;
+    width: 200px;   
+}
+
+#AdivinaPokemon .btn {
+    padding: 8px 15px;
+    font-size: 1.5em !important;
+    cursor: pointer;
+    background-color: #007bff !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+#AdivinaPokemon .btn:hover {
+    background-color: #ffff00 !important;
+}
+
+#AdivinaPokemon .error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

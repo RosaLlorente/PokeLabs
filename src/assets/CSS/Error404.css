@@ -1,0 +1,55 @@
+@import url('./style.css');
+/*SECCIÓN Landing*/
+#Error404{
+    height: 100vh;
+}
+#Error404 .Contenido{
+    width: 100%;
+}
+#Error404 .video-bg {
+    object-fit: cover;
+    z-index: -1; 
+}
+#Error404  .Contenido {
+    z-index: 1; 
+}
+#Error404  aside p{
+    margin-top: 0.5em;
+    font-size: 0.7em;
+}
+#Error404  button{
+    width: 20%;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 100%;
+    border: none;
+}
+#Error404 .Contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MensajeError404{
+    background-color: transparent;
+    border: none;
+    width: 50%;
+    margin-bottom: 10em;
+    backdrop-filter: blur(10px);
+    padding: 1em;
+    background-color: #fffb004b;
+    border-radius: 3em;
+    color: #ff0000;
+    font-size: 1.3em;
+    font-family: var(--font-text);
+}
+.MensajeError404 button{
+    background-color: #fffb00;
+    width: 50%;
+    border-radius: 3em;
+    color: #ff0000;
+    font-weight: bold;
+}
